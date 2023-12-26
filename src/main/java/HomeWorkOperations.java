@@ -43,3 +43,28 @@ class Operations{
         }
     }
 }
+
+class HW {
+    public static void main (String[] args) {
+        int a = 1;
+        int b = 0;
+        try {
+            int c = a / b;
+        } catch (ArithmeticException e){
+            System.out.println ("Arithmetical exception, please enter another number");
+        } finally {
+            System.out.println ("Finally block is exist");
+        }
+        System.out.println ("Program is continue working...");
+    }
+}
+class HW2{
+    public static void main(String[] args){
+        int[] mass = {1, 2, 3, 4, 5};
+        try {
+            int value = mass [5];
+        } catch (ArrayIndexOutOfBoundsException e){
+            System.out.println("Going beyond array boundaries");
+        }
+    }
+}
